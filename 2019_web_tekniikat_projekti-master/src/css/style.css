@@ -1,0 +1,382 @@
+html {
+
+    background-image: url("tausta_transparent2.png");
+    background-repeat: repeat;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 20px 30px 30px 20px;
+    max-width: 800px;
+    //background: #bae8ff;/
+    background: rgba(225,234,244,1);
+    background: -moz-linear-gradient(top, rgba(225,234,244,1) 0%, rgba(144,173,208,1) 99%, rgba(144,173,208,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(225,234,244,1) 0%, rgba(144,173,208,1) 99%, rgba(144,173,208,1) 100%);
+    background: -o-linear-gradient(top, rgba(225,234,244,1) 0%, rgba(144,173,208,1) 99%, rgba(144,173,208,1) 100%);
+    background: -ms-linear-gradient(top, rgba(225,234,244,1) 0%, rgba(144,173,208,1) 99%, rgba(144,173,208,1) 100%);
+    background: linear-gradient(to bottom, rgba(225,234,244,1) 0%, rgba(144,173,208,1) 99%, rgba(144,173,208,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1eaf4', endColorstr='#90add0', GradientType=0 );
+
+    margin: auto auto 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    /shadow border/
+    -webkit-box-shadow: 0 0 5px -0.5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 5px -0.5px rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px -0.5px rgba(0,0,0,0.75);
+    /border edge + smoothing/
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border: 1px solid #000000;
+}
+
+figure, img {
+    margin-inline-start: 0;
+    padding: 0;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+figcaption {
+    font-size: 12px;
+}
+
+h1 {
+    padding: 0;
+    color:#0B2545;
+}
+
+h2 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul {
+    padding: 0;
+    text-align: left;
+}
+
+
+li {
+    padding-left: 0;
+    padding-top: 20px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+footer {
+    float: bottom;
+    padding-top: 20px;
+/background-color: #bae8ff;/
+color: #FFFFFF;
+    text-align: left;
+    font-size: 0.8em;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+article {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#palautus ul {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#nimi, #navigoi {
+    width: 100%;
+}
+
+input {
+    cursor:text;
+    font-size:15px;
+    text-decoration:none;
+}
+
+button {
+    background:linear-gradient(to bottom, #3d83c4 5%, #4d9ff0 100%);
+    background-color:#3d83c4;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:12px;
+    padding:4px 24px;
+    text-decoration:none;
+    text-shadow:0 1px 0 #528ecc;
+}
+button:hover {
+    background:linear-gradient(to bottom, #4c86bf 5%, #4c86bf 100%);
+    background-color:#4c86bf;
+}
+button:active {
+    position:relative;
+    top:1px;
+}
+
+#navigoi {
+    display: inline-block;
+    justify-content: left;
+    padding-top: 20px;
+    float: left;
+}
+
+#navigoi a {
+    display: inline-block;
+    float: left;
+    line-height: 3rem;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow:inset 0 1px 0 0 #dcecfb;
+    background:linear-gradient(to bottom, #3d83c4 5%, #4d9ff0 100%);
+    background-color:#3d83c4;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 24px;
+    text-shadow:0 1px 0 #528ecc;
+}
+#navigoi a:hover {
+    background:linear-gradient(to bottom, #4c86bf 5%, #4c86bf 100%);
+    background-color:#4c86bf;
+}
+#navigoi a:active {
+    position:relative;
+    top:1px;
+}
+
+
+#navigoiKokoReitti {
+    display: inline-block;
+    float: left;
+    justify-content: left;
+    padding-top: 20px;
+}
+
+#navigoiKokoReitti a {
+    display: inline-block;
+    float: left;
+    line-height: 3rem;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow:inset 0 1px 0 0 #dcecfb;
+    background:linear-gradient(to bottom, #3d83c4 5%, #4d9ff0 100%);
+    background-color:#3d83c4;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 24px;
+    text-shadow:0 1px 0 #528ecc;
+}
+#navigoiKokoReitti a:hover {
+    background:linear-gradient(to bottom, #4c86bf 5%, #4c86bf 100%);
+    background-color:#4c86bf;
+}
+#navigoiKokoReitti a:active {
+    position:relative;
+    top:1px;
+}
+
+#osoite, #kaupunki, #lisatiedot {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin: 0.3rem 0;
+}
+
+.container {
+    display: none;
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.punainen-ikoni {
+    font-family: 'Roboto', sans-serif;
+    background: #ff6324;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.vihrea-ikoni {
+    font-family: 'Roboto', sans-serif;
+    background: #27ba35;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.visible {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    html {
+        background: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background: lightblue;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        max-width: 1080px;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        border-style: none;
+
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: xx-large;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        padding: 0;
+        text-align: left;
+    }
+
+    li {
+        padding-left: 0;
+        padding-top: 20px;
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    footer {
+        padding-top: 20px;
+        float: bottom;
+        background-color: lightblue;
+        color: white;
+        text-align: left;
+        font-size: 0.8em;
+        font-family: "Lucida Console", Monaco, monospace;
+    }
+
+    article {
+        display: block;
+    }
+
+    #map {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    #nimi, #navigoi {
+        width: 100%;
+    }
+
+
+
+    #osoite, #kaupunki, #lisatiedot {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        margin: 0.3rem 0;
+    }
+
+    .container {
+        display: none;
+        width: 100%;
+        padding: 0;
+        border-style: none;
+    }
+
+    /* leaflet ikonit */
+    .punainen-ikoni {
+        font-family: 'Roboto', sans-serif;
+        background: #ff6324;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 30px;
+    }
+
+    .vihrea-ikoni {
+        font-family: 'Roboto', sans-serif;
+        background: #27ba35;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 30px;
+    }
+
+    .visible {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+        border-style: none;
+    }
+}

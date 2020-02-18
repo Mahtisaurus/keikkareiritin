@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keikkareititin</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+</head>
+
+<body>
+
+<section>
+
+<h1>Keikkareititin</h1>
+
+<p>Tämä sovellus auttaa sinua löytämään lempibändisi keikat ja saamaan reittiohjeet keikoille.
+Aloita syöttämällä lempiyhtyeesi nimi hakukenttään.</p>
+</section>
+
+<input id="hakuteksti" name="hakuteksti" type="text" placeholder="Syötä bändin nimi"><br/><br/>
+<button name="haku">Hae bändin tiedot</button>
+
+<br/>
+<br/>
+
+<div class="container" id="muuta">
+    <div id="map"></div>
+    <main>
+        <article>
+            <h3 id="nimi"></h3>
+            <div id="navigoi">
+                <div>
+                    <a href="#" target="_blank">Hae reitti valitsemallesi keikalle</a>
+
+                </div>
+
+            </div>
+            <div id="navigoiKokoReitti">
+                <a href="#" name="button2" id="button2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hae koko kiertueen reitti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+
+            <h4 id="osoite"></h4>
+            <p id="kaupunki"></p>
+            <p id="lisatiedot"></p>
+        </article>
+    </main>
+</div>
+
+
+<ul id="list"></ul>
+
+<p id="demo"></p>
+
+<a href="https://www.songkick.com" target="_blank">
+<figure>
+    <img src="css/powered-by-songkick-pink.png" alt="Powered by Songkick logo" width="100" height="100%">
+</figure>
+<a/>
+
+<footer>Toteutus: Ville Pystynen & Tino Kankkunen 2019
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script><script src="js/magic.js"></script>
+</body>
+</html>
